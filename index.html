@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interactive CV Builder</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Interactive CV Builder</h1>
+
+<div class="container">
+
+  <!-- Form Input -->
+  <div class="form-section">
+    <h2>Fill Your CV</h2>
+    <label>Name:</label>
+    <input type="text" id="name" placeholder="Your Name">
+
+    <label>About Me:</label>
+    <textarea id="about" placeholder="About you..." rows="3"></textarea>
+
+    <label>Experience:</label>
+    <textarea id="experience" placeholder="Job experience..." rows="3"></textarea>
+
+    <label>Education:</label>
+    <textarea id="education" placeholder="Education..." rows="2"></textarea>
+
+    <label>Skills (comma separated):</label>
+    <input type="text" id="skills" placeholder="HTML, CSS, JS">
+
+    <label>Contact Info:</label>
+    <textarea id="contact" placeholder="Email, GitHub, LinkedIn..." rows="2"></textarea>
+
+    <button onclick="generateCV()">Preview CV</button>
+    <button onclick="downloadCV()">Download HTML</button>
+  </div>
+
+  <!-- Preview CV -->
+  <div class="preview-section">
+    <h2>CV Preview</h2>
+    <div class="cv-preview" id="cvPreview">
+      <p>Fill the form and click Preview CV to see your CV here.</p>
+    </div>
+  </div>
+
+</div>
+
+<script src="cv-builder.js"></script>
+</body>
+</html>
